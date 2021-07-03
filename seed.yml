@@ -1,0 +1,8 @@
+name: seed.services
+publisher: local
+description: a seed waiting to sprout
+license: CC BY 4.0
+repository:
+    type: git
+    url: ''
+root: vault

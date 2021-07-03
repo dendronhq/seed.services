@@ -1,0 +1,11 @@
+version: 1
+schemas:
+  - id: service
+    title: service
+    parent: root
+    children: 
+      - cook
+      - pricing
+  - id: cook
+    desc: Cookbook for specific tasks
+  - id: pricing
