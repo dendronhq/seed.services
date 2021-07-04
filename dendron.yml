@@ -16,13 +16,15 @@ journal:
     addBehavior: childOfDomain
     firstDayOfWeek: 1
 site:
+    siteUrl: 'https://saas.dendron.so'
+    githubCname: saas.dendron.so
     copyAssets: true
     siteHierarchies:
         - root
     siteRootDir: docs
     usePrettyRefs: true
-    title: Dendron
-    description: Personal knowledge space
+    title: Software as a Service (SaaS) Reference - Dendron
+    description: Open reference of everything SaaS
     duplicateNoteBehavior:
         action: useVault
         payload:
