@@ -20,10 +20,10 @@ site:
     githubCname: saas.dendron.so
     copyAssets: true
     siteHierarchies:
-        - root
+        - s
     siteRootDir: docs
     usePrettyRefs: true
-    title: Software as a Service (SaaS) Reference - Dendron
+    title: SaaS Reference Guide - Dendron
     description: Open reference of everything SaaS
     duplicateNoteBehavior:
         action: useVault
