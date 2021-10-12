@@ -2,7 +2,7 @@
 id: VWZTxfqEj7FwlVyo0ZkNw
 title: Actions
 desc: ''
-updated: 1625329440188
+updated: 1633452405137
 created: 1625329440188
 ---
 
@@ -32,3 +32,7 @@ TBD
 - [Creating actions](https://docs.github.com/en/actions/creating-actions)
 
 [^actions]: [About actions](https://docs.github.com/en/actions/creating-actions/about-actions) - Commons Attribution 4.0 International Public License
+
+## Related
+- [[Context|s.github.ref.context]]
+

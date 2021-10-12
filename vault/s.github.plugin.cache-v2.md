@@ -2,7 +2,7 @@
 id: DLpmD6IfO5qtIKgh
 title: Cache V2
 desc: ''
-updated: 1627576353680
+updated: 1632355543998
 created: 1627576088900
 ---
 
@@ -42,8 +42,28 @@ with:
 
 ```
 
+### Skipping steps based on cache-hit
+
+```yml
+steps:
+- uses: actions/checkout@v2
+
+- uses: actions/cache@v2
+  id: cache
+  with:
+    path: path/to/dependencies
+    key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+
+- name: Install Dependencies
+  if: steps.cache.outputs.cache-hit != 'true'
+  run: /install.sh
+```
+
 
 <!-- -->
 
 
 - [^1]: [GitHub - actions/cache: Cache dependencies and build outputs in GitHub Actions](https://github.com/actions/cache)
+
+## Related
+- [[Caching|s.github.t.actions.ref.caching]]
