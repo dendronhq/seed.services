@@ -2,7 +2,7 @@
 id: L80sFsAAcOO_0ztqZrN1J
 title: Cook
 desc: ''
-updated: 1625329160942
+updated: 1634339101983
 created: 1625329160942
 ---
 
@@ -30,3 +30,10 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 1. Upload it to github
 
 - NOTE: you can't add a key that's already used elsewhere, see [Error: Key already in use](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/error-key-already-in-use)
+
+
+### Prevent auto close pull request
+
+might not be possible
+
+- <https://stackoverflow.com/questions/22874131/how-to-merge-from-a-pull-request-into-master-without-closing-the-pull-request>
