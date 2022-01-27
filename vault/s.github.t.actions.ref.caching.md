@@ -2,7 +2,7 @@
 id: ZPpK7hlt92TPsXgo94j7a
 title: Caching
 desc: ''
-updated: 1632355584214
+updated: 1643135169951
 created: 1632354274744
 ---
 
@@ -20,19 +20,20 @@ created: 1632354274744
 - total size of all caches in a repository is limited to 5 GB.
 
 ## Notes
+
 ### Comparing artifacts and dependency caching
 - artifacts are for outputs, caching is used for build process
 
 ### Restrictions for accessing a cache
 
-- workflow can access and restore a cache created in the current branch, base branch (including forked repos), and default branch (eg. `main`)
-- Access restrictions provide cache isolation
+- workflow can access and restore a cache created in the **current branch, base branch (including forked repos), and default branch** (eg. `main`)
+- **different branches otherwise have cache isolation**
     - /branchA can't access /branchB cache
 
 ### Using the cache action
 - `cache` action will attempt to restore a cache based on the `key` you provide. 
 - action restores the cached files to the `path` you configure
-- if no exact match, the action creates a new cache entry if the job completes successfully
+- if no exact match, the **action creates a new cache entry if the job completes successfully**
 - optionally provide a list of `restore-keys` to use when the key doesn't match 
 
 - Input parameters for the cache action

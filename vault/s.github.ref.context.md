@@ -2,7 +2,7 @@
 id: wz9ixYe1t788ta6sQd6jU
 title: Context
 desc: ''
-updated: 1633557757353
+updated: 1643138898190
 created: 1632353526973
 ---
 
@@ -36,8 +36,21 @@ jobs:
 ### toJSON
 
 ### hashFiles
+- https://docs.github.com/en/actions/learn-github-actions/expressions#hashfiles
 
-hashFiles('**/package-lock.json')
+- path is relative to the GITHUB_WORKSPACE directory and can only include files inside of the GITHUB_WORKSPACE
+- gotcha
+  - Pattern matching is case-insensitive on Windows
+
+- examples
+Matches any package-lock.json file in the repository.
+`hashFiles('**/package-lock.json')`
+
+Multiple patterns
+```
+hashFiles('**/package-lock.json', '**/Gemfile.lock')
+```
+
 
 
 ## Job Status Check
